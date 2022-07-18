@@ -1,21 +1,13 @@
-import './App.css';
+import React from 'react';
+import './Components/css/App.css';
+import  Header from './Components/NoteComponents/Header';
+import Notes from './Components/NoteComponents/Notes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to your Notes. Click to make a note!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-        </a>
-      </header>
+    <div className="main">
+      <Header />
+      <Notes />
     </div>
   );
 }
